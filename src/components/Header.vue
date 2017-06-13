@@ -1,11 +1,17 @@
 <template>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-inverse navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <router-link to="/" class="navbar-brand">Stock Trader</router-link>
       </div>
 
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="bs-navbar">
         <ul class="nav navbar-nav">
           <router-link to="/portfolio" activeClass="active" tag="li"><a>Portfolio</a></router-link>
           <router-link to="/stocks" activeClass="active" tag="li"><a>Stocks</a></router-link>
